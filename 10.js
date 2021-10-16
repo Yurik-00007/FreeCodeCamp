@@ -73,3 +73,11 @@ c /= 11;
 console.log(a);
 console.log(b);
 console.log(c);
+//21
+
+var myFistNamr="Yury";
+var myLastName="Timofeev";
+console.log(myFistNamr);
+console.log(myLastName);
+
+//22
