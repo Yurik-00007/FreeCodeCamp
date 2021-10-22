@@ -145,6 +145,71 @@ var myArray = [["John", 23], ["cat", 2]];
 myArray.push(["dog",3]);
 // Only change code below this line
 console.log(namber+'\n'+myArray);
-//42
+//42 Управление массивами с помощью pop ()
+// Setup
+var myArray = [["John", 23], ["cat", 2]];
 
-//43
+// Only change code below this line
+var removedFromMyArray=myArray.pop();
+console.log(removedFromMyArray);
+console.log(myArray);
+//43 Управление массивами с помощью shift ()
+// Setup
+var myArray = [["John", 23], ["dog", 3]];
+
+// Only change code below this line
+var removedFromMyArray=myArray.shift();
+console.log(removedFromMyArray);
+console.log(myArray);
+//44 Управление массивами с помощью unshift ()
+// Setup
+var myArray = [["John", 23], ["dog", 3]];
+myArray.shift();
+console.log(myArray);
+myArray.unshift(["Paul",35]);
+console.log(myArray);
+// Only change code below this line
+
+//45 Список покупок
+var myList = [['potato',2],['cucumbers',4],['tomatoes',2],['meat',2],['Chocolate Bar',15]];
+console.log(myList);
+
+//46 Написание многоразового JavaScript с функциями
+function reusableFunction(){
+    console.log("Hi World");
+  }
+  reusableFunction();
+
+//47 Передача значений функциям с аргументами
+function functionWithArgs(a,b){
+    console.log(a+b);
+  }
+  functionWithArgs(1,2);
+  functionWithArgs(7,9);
+
+//48
+
+
+//49
+
+
+//50
+
+
+//51
+
+
+//52
+
+
+//52
+
+
+//53
+
+
+//54
+
+
+//55
+
