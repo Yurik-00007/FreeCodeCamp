@@ -196,7 +196,7 @@ function fun1() {
   // Assign 5 to oopsGlobal Here
    oopsGlobal=5;
 }
-fun1()
+fun1();
 // Only change code above this line
 
 function fun2() {
@@ -210,14 +210,39 @@ function fun2() {
   console.log(namber+'\n'+output);
 }
 fun2();
-//49
+
+//49 Локальный охват и функции
+function myLocalScope() {
+  let myVar='myVar';
+    // Only change code below this line
+  
+    console.log('inside myLocalScope', myVar);
+  }
+  myLocalScope();
+  let myVar=0;
+  // Run and check the console
+  // myVar is not defined outside of myLocalScope
+  console.log('outside myLocalScope', myVar);
+
+//50 Глобальный и локальный объем функций
+var outerWear = "T-Shirt";
+
+function myOutfit() {
+  // Only change code below this line
+let outerWear='sweater'
 
 
-//50
+  // Only change code above this line
+  return outerWear;
+}
 
-
-//51
-
+console.log(myOutfit());
+console.log(outerWear);
+//51 Вернуть значение из функции с возвратом
+function timesFive(num){
+  return (num*5);
+}
+console.log(timesFive(5));
 
 //52
 
