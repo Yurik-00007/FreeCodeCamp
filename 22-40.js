@@ -129,7 +129,7 @@ myArray[0]=45;
 console.log(namber+'\n'+myArray);
 
 //40
-var namber=40
+var namber=40;
 var myArray = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13, 14]];
 
 var myData = myArray[2][1];
@@ -138,7 +138,7 @@ var myData1 = myArray[3];
 console.log(namber+'\n'+myData+'\n'+myData1);
 
 //41
-var namber=41
+var namber=41;
 
 // Setup
 var myArray = [["John", 23], ["cat", 2]];
@@ -187,9 +187,29 @@ function functionWithArgs(a,b){
   functionWithArgs(1,2);
   functionWithArgs(7,9);
 
-//48
+//48 Глобальный объем и функции
 
+var namber=48;
 
+let myGlobal=10;
+function fun1() {
+  // Assign 5 to oopsGlobal Here
+   oopsGlobal=5;
+}
+fun1()
+// Only change code above this line
+
+function fun2() {
+  var output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(namber+'\n'+output);
+}
+fun2();
 //49
 
 
