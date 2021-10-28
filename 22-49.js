@@ -224,37 +224,3 @@ function myLocalScope() {
   // myVar is not defined outside of myLocalScope
   console.log('outside myLocalScope', myVar);
 
-//50 Глобальный и локальный объем функций
-var outerWear = "T-Shirt";
-
-function myOutfit() {
-  // Only change code below this line
-let outerWear='sweater'
-
-
-  // Only change code above this line
-  return outerWear;
-}
-
-console.log(myOutfit());
-console.log(outerWear);
-//51 Вернуть значение из функции с возвратом
-function timesFive(num){
-  return (num*5);
-}
-console.log(timesFive(5));
-
-//52
-
-
-//52
-
-
-//53
-
-
-//54
-
-
-//55
-
