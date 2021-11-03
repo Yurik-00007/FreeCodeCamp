@@ -1,3 +1,4 @@
+/*
 //50 Глобальный и локальный объем функций
 var outerWear = "T-Shirt";
 
@@ -121,19 +122,92 @@ return "No, that was false"
 console.log(trueOrFalse(true));
 console.log(trueOrFalse(false));
 
-//59
+//59 Сравнение с оператором равенства
+// Setup
+function testEqual(val) {
+  if (val == 12) { // Change this line
+    return "Equal";
+  }
+  return "Not Equal";
+}
 
-//60
+console.log(testEqual('12'));
 
-//61
+//60 Сравнение с оператором строгого равенства
 
-//62
+// Setup
+function testStrict(val) {
+  if (val === 7) { // Change this line
+    return "Equal";
+  }
+  return "Not Equal";
+}
 
-//63
+console.log(testStrict('7'));
 
-//64
+//61 Практикуйтесь в сравнении разных значений
+// Setup
+function compareEquality(a, b) {
+  if (a === b) { // Change this line
+    return "Equal";
+  }
+  return "Not Equal";
+}
+let w='11';
+console.log(typeof(w));
+console.log(compareEquality(10, "10"));
 
+//62 Сравнение с оператором неравенства
+
+// Setup
+function testNotEqual(val) {
+  if (val != 99) { // Change this line
+    return "Not Equal";
+  }
+  return "Equal";
+}
+
+console.log(testNotEqual(99));
+*/
+//63 Сравнение с оператором строгого неравенства
+// Setup
+function testStrictNotEqual(val) {
+  if (val!==17) { // Change this line
+    return "Not Equal";
+  }
+  return "Equal";
+}
+
+console.log(testStrictNotEqual('17'));
+//64 Сравнение с оператором
+function testGreaterThan(val) {
+  if (val>100) {  // Change this line
+    return "Over 100";
+  }
+
+  if (val>10) {  // Change this line
+    return "Over 10";
+  }
+
+  return "10 or Under";
+}
+
+console.log(testGreaterThan(100));
 //65
+
+function testGreaterOrEqual(val) {
+  if (val>=20) {  // Change this line
+    return "20 or Over";
+  }
+
+  if (val>=10) {  // Change this line
+    return "10 or Over";
+  }
+
+  return "Less than 10";
+}
+
+testGreaterOrEqual(10);
 
 //66
 
