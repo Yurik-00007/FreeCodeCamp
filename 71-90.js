@@ -183,9 +183,31 @@ switch(val){
 
 console.log(chainToSwitch(7));
 //79
+function isLess(a, b) {
+  // Only change code below this line
 
+    return a < b;
+  
+    
+  // Only change code above this line
+}
+
+console.log(isLess(10, 15));
 //80
+// Setup
+function abTest(a, b) {
+  // Only change code below this line
+if(a<0){
+  return undefined;
+}else if(b<0)
+return undefined;
 
+  // Only change code above this line
+
+  return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+}
+
+console.log(abTest(2,-2));
 //81
 
 //82
