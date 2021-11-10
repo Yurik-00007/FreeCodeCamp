@@ -210,11 +210,77 @@ function testGreaterOrEqual(val) {
 testGreaterOrEqual(10);
 
 //66
+function testLessThan(val) {
+  if (val<25) {  // Change this line
+    return "Under 25";
+  }
 
+  if (val<55) {  // Change this line
+    return "Under 55";
+  }
+
+  return "55 or Over";
+}
+
+console.log(testLessThan(10));
 //67
+function testLessOrEqual(val) {
+  if (val<=12) {  // Change this line
+    return "Smaller Than or Equal to 12";
+  }
 
+  if (val<=24) {  // Change this line
+    return "Smaller Than or Equal to 24";
+  }
+
+  return "More Than 24";
+}
+
+console.log(testLessOrEqual(24));
 //68
+function testLogicalAnd(val) {
+  // Only change code below this line
 
+  if (val<=50 && val>=25) {
+    
+      return "Yes";
+  
+  }
+
+  // Only change code above this line
+  return "No";
+}
+
+  console.log(testLogicalAnd(55));
 //69
+function testLogicalOr(val) {
+  // Only change code below this line
 
+  if (val<10 || val>20) {
+    return "Outside";
+  }
+
+ 
+
+  // Only change code above this line
+  return "Inside";
+}
+
+console.log(testLogicalOr(0));
 //70
+
+function testElse(val) {
+  let result = "";
+  // Only change code below this line
+
+  if (val > 5) {
+    result = "Bigger than 5";
+  }else   {
+    result = "5 or Smaller";
+  }
+
+  // Only change code above this line
+  return result;
+}
+
+console.log(testElse(6));
