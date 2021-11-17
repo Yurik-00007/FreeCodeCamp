@@ -287,9 +287,28 @@ const drinkValue = testObj1['the drink'];    // Change this line
 console.log(entreeValue);
 console.log(drinkValue);
 //85
+// Setup
+const testObj2 = {
+  12: "Namath",
+  16: "Montana",
+  19: "Unitas"
+};
 
+// Only change code below this line
+const playerNumber = 16;  // Change this line
+const player = testObj2[playerNumber]; 
+console.log(player);
 //86
+const myDog86 = {
+  "name": "Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
 
+// Only change code below this line
+myDog86.name='Happy Coder';
+console.log(myDog86);
 //87
 
 //88
