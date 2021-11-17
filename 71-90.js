@@ -248,11 +248,44 @@ if (count>0){
 }
 console.log(count+' '+result);
 //82
+const myDog = {
+  // Only change code below this line
+'name': 'Sharif',
+legs: 4,
+tails: 1,
+friends: ['people', 'dogs']
+
+
+  // Only change code above this line
+};
+console.log(myDog)
 
 //83
+// Setup
+const testObj = {
+  "hat": "ballcap",
+  "shirt": "jersey",
+  "shoes": "cleats"
+};
 
+// Only change code below this line
+const hatValue = testObj.hat;      // Change this line
+const shirtValue = testObj.shirt;  
+console.log(hatValue);
+console.log(shirtValue);
 //84
+// Setup
+const testObj1 = {
+  "an entree": "hamburger",
+  "my side": "veggies",
+  "the drink": "water"
+};
 
+// Only change code below this line
+const entreeValue = testObj1['an entree'];   // Change this line
+const drinkValue = testObj1['the drink'];    // Change this line
+console.log(entreeValue);
+console.log(drinkValue);
 //85
 
 //86
