@@ -1,4 +1,5 @@
 //71
+/*
 function testElseIf(val) {
     if (val > 10) {
       return "Greater than 10";
@@ -310,9 +311,68 @@ const myDog86 = {
 myDog86.name='Happy Coder';
 console.log(myDog86);
 //87
-
+const myDog87 = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+myDog87["bark"]="bow-wow";
+myDog87["bark2"]="wow";
 //88
-
+delete myDog87.tails;
+console.log(myDog87);
 //89
+// Setup
+function phoneticLookup(val) {
+  let result = "";
 
+  // Only change code below this line
+ const lookup = {
+     alpha: "Adams",
+     bravo : "Boston",
+     charlie: "Chicago",
+     delta: "Denver",
+     echo: "Easy",
+     foxtrot: "Frank"
+  };
+result = lookup[val];
+  // Only change code above this line
+  return result;
+}
+
+console.log(phoneticLookup("charlie"));
 //90
+
+var myObj90 ={
+  gift: "pony",
+  pet: "kitten",
+  bed: "sleigh"
+};
+function checkObj(checkProp) {
+  // Only change code below this line
+  if(myObj90.hasOwnProperty("checkProp")){
+    return myObj90[checkProp];
+  }else if(myObj90.hasOwnProperty(checkProp)!==true){
+    return "Not Found";
+  }else{
+  return "Change Me!";
+  }
+  // Only change code above this line
+}
+checkObj("gift");
+*/
+
+function checkObj(obj, checkProp) {
+  // Only change code below this line
+  console.log(obj.hasOwnProperty(checkProp));
+  if(obj.hasOwnProperty(checkProp)){
+    return obj[checkProp];
+  }else if(obj.hasOwnProperty("checkProp")!==true){
+    return "Not Found";
+  }else {
+  return "Change Me!";
+  }
+  // Only change code above this line
+}
+console.log(checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "gift"));
